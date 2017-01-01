@@ -1,0 +1,8 @@
+#!/bin/bash
+# Program to restart a network interface.
+# Martin Häggström 170101
+
+INTERFACE=$1
+
+ifconfig $INTERFACE down
+ifconfig $INTERFACE up
